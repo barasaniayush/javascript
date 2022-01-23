@@ -41,7 +41,7 @@ if(marks > 90) {
 // Declare a variable named DAY whose value represents a day in a week.
 // Using switch case console log the name of the day from the week based on the value of DAY
 
-var days = "monday";
+var days = "Monday";
 switch(days) {
     case "Sunday":
         console.log("Today is sunday");
@@ -68,15 +68,24 @@ switch(days) {
 
 
 // Sort the given array in ascending order and after sorting change the last value to string ‘LAST’.
-//Console log the output Sample array = [1, 5, 3, 2, 4]
+// Console log the output Sample array = [1, 5, 3, 2, 4]
 
 
 let Arr1 = [1, 5, 3, 2, 4];
-// for (var i = 1; i < Arr1.length; i++)
-//     for (var j = 0; j < i; j++)
-//         if (Arr1[i] < Arr1[j]) {
-//           var x = Arr1[i];
-//           Arr1[i] = Arr1[j];
-//           Arr1[j] = x;
-//         }
-// console.log(Arr1);
+for (var i = 0; i < Arr1.length; i++){
+    for (var j = 0; j < i; j++){
+        if (Arr1[i] < Arr1[j]) {
+          var x = Arr1[i];
+          Arr1[i] = Arr1[j];
+          Arr1[j] = x;
+        }
+    }
+}
+console.log(Arr1);
+
+Arr1[4] = "LAST";
+console.log(Arr1);
+
+
+
+
